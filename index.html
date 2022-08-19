@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Shopping Cart</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body style="background-image: url('./images/andrej-lisakov-Yy4sN6QzboU-unsplash.jpg');">
+    <div class='container'>
+      <h1 class='text-center'>My Shopping Cart</h1><br>
+      <div class='col-12'>
+        <table class='table table-responsive' id='cart'>
+          <thead class=''>
+            <tr>
+              <th scope='col'>Item</th>
+              <th scope='col'>Unit Price</th>
+              <th scope='col'>Quantity</th>
+              <th scope='col'>Total</th>
+              <th scope='col'></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class='item'>Harvard Graphic Pullover</td>
+              <td class='price' style='font-weight: bold'>37.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost' style='font-weight: bold'></td>
+              <td><button class='btn btn-danger btn-xs remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Ditsy Floral Print Pants</td>
+              <td class='price' style='font-weight: bold'>31.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost' style='font-weight: bold'></td>
+              <td><button class='btn btn-danger btn-xs remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Crew Neck Cropped Tee</td>
+              <td class='price' style='font-weight: bold'>9.00</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost' style='font-weight: bold'></td>
+              <td><button class='btn btn-danger btn-xs remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Fitted Cap-Sleeve Top</td>
+              <td class='price' style='font-weight: bold'>21.50</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost' style='font-weight: bold'></td>
+              <td><button class='btn btn-danger btn-xs remove'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item'>Cotton Cargo Pants</td>
+              <td class='price' style='font-weight: bold'>41.50</td>
+              <td class='qty'><input type='number'></input></td>
+              <td class='cost' style='font-weight: bold'></td>
+              <td><button class='btn  btn-danger btn-xs remove'><i>Remove</i></button></td>
+            </tr>
+            <tr id='lastRow'>
+              <td><input class='form-control input-sm' type='text' id='item' placeholder='new item'></input></td>
+              <td><input class='form-control input-sm' type='number' id='price' placeholder='price'></input></td>
+              <td colspan='2'></td>
+              <td><button class='btn btn-primary btn-sm add'>Add</button></td>
+            </tr>
+          </tbody>
+          <tfoot style='font-weight: bold' class=''>
+            <tr>
+              <td colspan='3'>TOTAL PRICE</td>
+              <td ID='grandTotal'></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+
+  </body>
+</html>
